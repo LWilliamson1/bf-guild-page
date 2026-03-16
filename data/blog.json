@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "title": "Belligerent Fury Conquers Nerub-ar Palace",
+    "slug": "bf-conquers-nerubar-palace",
+    "excerpt": "After weeks of progression, the guild achieved a decisive victory in Nerub-ar Palace, with Zhath leading the charge against The Silken Court.",
+    "content": "After weeks of relentless progression raiding, Belligerent Fury has claimed another major victory. Our fearless Demon Hunter guild master Zhath coordinated both Horde and Alliance members flawlessly as we pushed through Nerub-ar Palace on Heroic difficulty. The Silken Court encounter was our sticking point — coordinating the dual-boss mechanics across a mixed-faction raid required exceptional communication and trust. By our 47th attempt, the coordination clicked and both bosses fell within seconds of each other. The loot council was fair and swift, and morale is at an all-time high. Next week we push for Mythic progression. Belligerent Fury forever!",
+    "author": "Zhath",
+    "authorClass": "Demon Hunter",
+    "date": "2026-03-10",
+    "tags": ["Progression", "Heroic", "Nerub-ar Palace"],
+    "image": "/images/gallery/placeholder-1.jpg"
+  },
+  {
+    "id": "2",
+    "title": "Recruitment Drive: Seeking Healers & Ranged DPS",
+    "slug": "recruitment-drive-healers-ranged",
+    "excerpt": "We are expanding our roster ahead of the next raid tier. Experienced healers and ranged DPS are especially welcome — all factions encouraged to apply.",
+    "content": "Belligerent Fury is a mixed-faction guild on Antonidas and we pride ourselves on a drama-free, performance-focused environment. As we gear up for the next content tier, we are actively looking for dedicated healers (Resto Druid, Holy Priest, Mistweaver preferred) and ranged DPS (Balance Druid, Shadow Priest, Mage, Hunter). Raid times are Tuesday and Thursday, 8–11 PM server time. We use Discord for voice communication and have a well-stocked guild bank. Apply using the recruitment form and Zhath or an officer will reach out within 48 hours.",
+    "author": "Zhath",
+    "authorClass": "Demon Hunter",
+    "date": "2026-03-14",
+    "tags": ["Recruitment", "Healers", "Ranged DPS"],
+    "image": null
+  }
+]

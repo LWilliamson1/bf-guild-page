@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "title": "Nerub-ar Palace – Heroic Clear",
+    "description": "The guild after clearing Heroic Nerub-ar Palace. Zhath front and center!",
+    "date": "2026-03-10",
+    "tags": ["Heroic", "Nerub-ar Palace", "TWW"]
+  },
+  {
+    "id": "2",
+    "title": "Mythic+ 20 Keystone Achievement",
+    "description": "First +20 of the season — Ara-Kara, City of Echoes timed with 3 seconds to spare.",
+    "date": "2026-02-28",
+    "tags": ["Mythic+", "Keystone", "Season"]
+  },
+  {
+    "id": "3",
+    "title": "Guild Anniversary Screenshot",
+    "description": "Celebrating one year of Belligerent Fury on Antonidas. All factions, one guild.",
+    "date": "2026-01-15",
+    "tags": ["Anniversary", "Community", "Guild"]
+  }
+]
