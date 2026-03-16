@@ -45,6 +45,26 @@ export interface RecruitApplication {
   submittedAt: string;
 }
 
+export type ScheduleEventType = "raid" | "mythicplus" | "pvp" | "social";
+
+export interface ScheduleEvent {
+  id: string;
+  title: string;
+  type: ScheduleEventType;
+  raidInstance: string | null;
+  difficulty: string | null;
+  leader: string;
+  leaderClass: string;
+  description: string;
+  startTime: string;
+  endTime: string;
+  date?: string;
+  recurring: string | null;
+  color: string;
+  signups: number;
+  rosterSize: number | null;
+}
+
 // ── Helpers ────────────────────────────────────────────────
 
 function readJson<T>(filename: string): T[] {
@@ -144,5 +164,29 @@ export async function updateApplicationStatus(
   if (!app) return false;
   app.status = status;
   writeJson("recruits.json", apps);
+  return true;
+}
+
+// ── Schedule ──────────────────────────────────────────────
+
+export async function getScheduleEvents(): Promise<ScheduleEvent[]> {
+  return readJson<ScheduleEvent>("schedule.json");
+}
+
+export async function createScheduleEvent(
+  event: Omit<ScheduleEvent, "id">
+): Promise<ScheduleEvent> {
+  const events = readJson<ScheduleEvent>("schedule.json");
+  const newEvent: ScheduleEvent = { ...event, id: Date.now().toString() };
+  events.push(newEvent);
+  writeJson("schedule.json", events);
+  return newEvent;
+}
+
+export async function deleteScheduleEvent(id: string): Promise<boolean> {
+  const events = readJson<ScheduleEvent>("schedule.json");
+  const filtered = events.filter((e) => e.id !== id);
+  if (filtered.length === events.length) return false;
+  writeJson("schedule.json", filtered);
   return true;
 }
